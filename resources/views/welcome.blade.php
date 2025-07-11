@@ -9,7 +9,7 @@
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&amp;display=swap" rel="stylesheet"/>
-  <style>
+  <style> 
    .stardos {
       font-family: "Stardos Stencil", cursive;
     }
@@ -19,22 +19,21 @@
   <!-- Header -->
   <header class="bg-gray-300 border-b border-gray-400">
    <div class="max-w-7xl mx-auto flex justify-end gap-3 py-2 px-4">
-    <button class="bg-red-700 text-white text-xs rounded-full px-4 py-1 hover:bg-red-800 transition">
-     Sign In
-    </button>
-    <button class="bg-red-700 text-white text-xs rounded-full px-4 py-1 hover:bg-red-800 transition">
-     Sign Up
-    </button>
+
+      <a href="{{ route('filament.keuangan.auth.login') }}" class="bg-red-700 text-white text-xs rounded-full px-4 py-1 hover:bg-red-800 transition">
+      Login Admin
+      </a>
+
    </div>
    <div class="max-w-7xl mx-auto text-center py-12">
     <h1 class="stardos text-red-700 text-4xl sm:text-5xl leading-tight select-none">
      RAJAWALI STAR
-     <br/>
+     <br/> 
      PERFORMANCE
-    </h1>
+    </h1> 
     <p class="text-black text-xs mt-1">
      Engineering Solutions For Your Car
-    </p>
+    </p> 
    </div>
   </header>
   <!-- Services Nav -->

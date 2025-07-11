@@ -12,6 +12,9 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Exports\TransactionExporter;
+use Filament\Tables\Actions\ExportAction;
+// use Filament\Actions\ExportAction;
 
 class TransactionResource extends Resource
 {
@@ -85,6 +88,10 @@ class TransactionResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
+            ])
+            ->headerActions([
+                ExportAction::make()
+                ->exporter(TransactionExporter::class)
             ]);
     }
 
